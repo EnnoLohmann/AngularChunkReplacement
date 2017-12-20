@@ -3,8 +3,8 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   {path: 'editor', loadChildren: './hero-editor/hero-editor.module#HeroEditorModule'},
-  {path: 'list', loadChildren: './hero-list/hero-list.module#HeroListModule'}
-  
+  {path: 'list', loadChildren: './hero-list/hero-list.module#HeroListModule'},
+  {path: 'creation', loadChildren: './hero-creation/hero-creation.module#HeroCreationModule'}
 ];
 
 @NgModule({
