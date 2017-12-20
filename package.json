@@ -9,7 +9,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:app": "ng build --prod --output-hashing none --named-chunks true --base-href \"\""
+    "build:app": "ng build --prod --output-hashing none --named-chunks true --base-href \"\"  --vendor-chunk true",
+    "build:app:dev": "ng build --output-hashing none --named-chunks true --base-href \"\""
   },
   "private": true,
   "dependencies": {
