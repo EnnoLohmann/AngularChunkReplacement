@@ -4,6 +4,8 @@ import { Injectable } from '@angular/core';
 @Injectable()
 export class HeroService {
 
+  selectedIndex = 0;
+
    heroes: Hero[] = [
     { id: 11, name: 'Mr. Nice' },
     { id: 12, name: 'Narco' },
@@ -18,6 +20,10 @@ export class HeroService {
   ];
 
   constructor() { }
+
+  getSelectedHero() {
+    return this.heroes[this.selectedIndex];
+  }
 
   getHeroes() {
     return this.heroes;
