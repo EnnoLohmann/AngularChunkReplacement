@@ -1,6 +1,6 @@
 import { Hero } from './../Domain/Hero';
 import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 
 @Injectable()
 export class HeroService {
@@ -20,7 +20,7 @@ export class HeroService {
     { id: 20, name: 'Tornado' }
   ];
 
-  heroSubject = new Subject<Hero[]>();
+  heroSubject = new BehaviorSubject<Hero[]>(this.heroes);
 
   constructor() {
     this.heroSubject.next(this.heroes);
