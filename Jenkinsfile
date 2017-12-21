@@ -5,7 +5,7 @@ pipeline {
     }
   }
   tools {
-    nodejs 'nodejs'
+    nodejs 'MyNode'
   }
   stages {
     stage('Build') {
