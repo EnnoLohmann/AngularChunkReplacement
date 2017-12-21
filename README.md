@@ -40,3 +40,9 @@ Angular only provides the Services if there is anyone who uses it. If you build 
 
 ### Angular Optimization
 Angular have in the production build some optimization which break the compatibility of the different versions of the chunks. The Uglifying can break the references. To prevent this just build in dev mode. Also don´t use the hashing in the names because it will prevent that every version of the chunk have the same filename.
+
+
+## Example Application
+This repository contains an example for the approach. We have the master branch and a bunch of feature branches. The project is the Tour of Heroes from the Angular tutorial with some additional third party libraries. The master constrains the structure and the shared services. Each feature is in it´s own module. For the HeroCreation we have two branches which contain two different versions of the module. 
+
+To see how the approach works you have to build the modules from every branch and manually compose the complete application. You can build the app with the command yarn build:app:dev. Then take the chunks from the feature branches and the remaining files from the master branch. Then you can run the application in an application server like tomcat and see how the modules work together.
