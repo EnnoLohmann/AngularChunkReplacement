@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { HeroListRoutingModule } from './hero-list-routing.module';
+import { ListeComponent } from './liste/liste.component';
 
 @NgModule({
   imports: [
@@ -10,6 +11,6 @@ import { HeroListRoutingModule } from './hero-list-routing.module';
     HeroListRoutingModule,
     SharedModule
   ],
-  declarations: []
+  declarations: [ListeComponent]
 })
 export class HeroListModule { }
