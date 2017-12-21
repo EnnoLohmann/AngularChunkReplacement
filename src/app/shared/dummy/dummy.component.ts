@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../services/hero.service';
+import { BsModalService } from 'ngx-bootstrap/modal';
 
 @Component({
   selector: 'app-dummy',
@@ -8,7 +9,7 @@ import { HeroService } from '../services/hero.service';
 })
 export class DummyComponent implements OnInit {
 
-  constructor(private heroService: HeroService) { }
+  constructor(private heroService: HeroService, private modalService: BsModalService ) { }
 
   ngOnInit() {
   }

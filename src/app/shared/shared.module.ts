@@ -21,7 +21,6 @@ import { HeroService } from './services/hero.service';
     AlertModule,
     ModalModule
   ],
-  declarations: [DummyComponent],
-  providers: [HeroService]
+  declarations: [DummyComponent]
 })
 export class SharedModule { }
