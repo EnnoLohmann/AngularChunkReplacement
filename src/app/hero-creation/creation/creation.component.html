@@ -1,0 +1,11 @@
+<h2>{{ newHero.name | uppercase }} Creation</h2>
+<label>id:
+  <input [(ngModel)]="newHero.id" placeholder="id">
+</label>
+<div>
+    <label>name:
+      <input [(ngModel)]="newHero.name" placeholder="name">
+    </label>
+</div>
+
+<button (click)="createHero()" class="btn btn-primary">Create new Hero</button>
