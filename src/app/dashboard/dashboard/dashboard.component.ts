@@ -1,6 +1,6 @@
+import { Hero } from './../../shared/Domain/Hero';
 import { Component, OnInit } from '@angular/core';
 import { HeroService } from '../../shared/services/hero.service';
-import { Hero } from '../../shared/Domain/Hero';
 
 @Component({
   selector: 'app-dashboard',
@@ -19,6 +19,10 @@ export class DashboardComponent implements OnInit {
    getHeroes(): void {
      this.heroService.getHeroes()
        .subscribe(heroes => this.heroes = heroes.slice(1, 5));
+   }
+
+   setActive(hero: Hero) {
+     this.heroService.selectedIndex = hero.id;
    }
 
 }
