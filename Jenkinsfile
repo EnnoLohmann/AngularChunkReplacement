@@ -1,11 +1,9 @@
 pipeline {
- agent { 
-    node { 
-      label 'docker'
+  agent {
+    node {
+      label 'MyNode'
     }
-  }
-  tools {
-    nodejs 'MyNode'
+    
   }
   stages {
     stage('Build') {
@@ -13,5 +11,8 @@ pipeline {
         sh 'npm install'
       }
     }
+  }
+  tools {
+    nodejs 'MyNode'
   }
 }
