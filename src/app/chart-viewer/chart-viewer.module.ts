@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { ChartViewerRoutingModule } from './chart-viewer-routing.module';
+import { ViewerComponent } from './viewer/viewer.component';
 
 @NgModule({
   imports: [
@@ -10,6 +11,6 @@ import { ChartViewerRoutingModule } from './chart-viewer-routing.module';
     ChartViewerRoutingModule,
     SharedModule
   ],
-  declarations: []
+  declarations: [ViewerComponent]
 })
 export class ChartViewerModule { }
