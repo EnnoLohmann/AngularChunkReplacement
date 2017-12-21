@@ -6,7 +6,8 @@ const routes: Routes = [
   {path: 'editor', loadChildren: './hero-editor/hero-editor.module#HeroEditorModule'},
   {path: 'list', loadChildren: './hero-list/hero-list.module#HeroListModule'},
   {path: 'creation', loadChildren: './hero-creation/hero-creation.module#HeroCreationModule'},
-  {path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'}
+  {path: 'dashboard', loadChildren: './dashboard/dashboard.module#DashboardModule'},
+  {path: 'chart', loadChildren: './chart-viewer/chart-viewer.module#ChartViewerModule'}  
 ];
 
 @NgModule({
