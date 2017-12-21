@@ -5,6 +5,7 @@ import { CKEditorModule } from 'ng2-ckeditor';
 import { AlertModule, ModalModule } from 'ngx-bootstrap';
 import { DummyComponent } from './dummy/dummy.component';
 import { HeroService } from './services/hero.service';
+import { ChartsModule } from 'ng2-charts';
 
 
 @NgModule({
@@ -13,13 +14,15 @@ import { HeroService } from './services/hero.service';
     FormsModule,
     CKEditorModule,
     AlertModule.forRoot(),
-    ModalModule.forRoot()
+    ModalModule.forRoot(),
+    ChartsModule
   ],
   exports: [
     FormsModule,
     CKEditorModule,
     AlertModule,
-    ModalModule
+    ModalModule,
+    ChartsModule
   ],
   declarations: [DummyComponent]
 })
